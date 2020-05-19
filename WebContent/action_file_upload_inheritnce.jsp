@@ -76,6 +76,12 @@ th {
 </style>
 </head>
 <body style="border-color: #454d55; background-color: #423F3F;">
+
+		<ul>
+		<li><a href="index.jsp">Home</a></li>
+		</ul>
+
+
 	<div >
 		<%
 		String currentClassName = "";
@@ -370,7 +376,23 @@ th {
 			<col style="width: 6%;">
 			<col style="width: 10%;">
 		</colgroup>
-<h1 style="text-align: center; color: white;"">complexity of a program due to Inheritance</h1>
+		
+		
+<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Inheritance</font>
+				</h1>
+				<br> 
+	
+			</div>
+
+	
+	<br>
+
+
+
 		<tbody>
 			<tr>
 				<th>Line No</th>

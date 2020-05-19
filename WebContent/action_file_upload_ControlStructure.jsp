@@ -83,6 +83,14 @@ th {
 </style>
 </head>
 <body>
+
+
+		<ul>
+		<li><a href="index.jsp">Home</a></li>
+		</ul>
+		
+
+
 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<%
 		String currentClassName = "";
@@ -447,11 +455,18 @@ th {
 	
 
 	
+			<div align="center">
+		
+				<h1 class="display-1"
+					style="center: 2%; margin-left: 100px; font-family: century gothic; font-size: 50px;margin-top: 10px">
+					<font color="#00376c">Complexity of Control Structure</font>
+				</h1>
+				<br> 
+	
+			</div>
 
-
-	<h1 style="position: absolute; right: 282px;">complexity of a program due to control structures</h1>
-	<br><br><br><br><br>
-
+	
+	<br>
 
 	<table class="table table-striped table-dark" style="width: 78%; margin-left: 184px;" >
 		<colgroup>

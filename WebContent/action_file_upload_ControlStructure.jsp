@@ -472,7 +472,33 @@ a:hover:not (.active ) {
 	%>
 	
 
-	
+	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 470px;">
+				<table class="table table-responsive-lg">
+					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col" style="text-align:center">Program Component</th>
+							<th scope="col" style="text-align:center">Weight</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Direct Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="1"></td>
+						</tr>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Indirect Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="2"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col text-right">
+					<button class="btn btn-dark" type="submit" name="sumbitButton"
+						id="sumbitButton">Save</button>
+				</div>
+			</form>
 
 	
 			<div align="center">

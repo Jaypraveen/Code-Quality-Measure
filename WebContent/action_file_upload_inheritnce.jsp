@@ -106,8 +106,6 @@ a:hover:not (.active ) {
 		<li><a href="index.jsp">Home</a></li>
 		</ul>
 
-
-	<div >
 		<%
 		String currentClassName = "";
 	File file = null;
@@ -387,6 +385,34 @@ a:hover:not (.active ) {
 	// 		regexString += list.get(x) + "\n";
 	%>
 </div>
+	<form action="AccessFilesServlet" method="post" class="form-group" style="width: 50%; margin-left: 470px;">
+				<table class="table table-responsive-lg">
+					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
+					<thead class="table-dark">
+						<tr>
+							<th scope="col" style="text-align:center">Program Component</th>
+							<th scope="col" style="text-align:center">Weight</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Direct Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="1"></td>
+						</tr>
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">Indirect Inheritance Weight</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="2"></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="col text-right">
+					<button class="btn btn-dark" type="submit" name="sumbitButton"
+						id="sumbitButton">Save</button>
+				</div>
+			</form>
+		
 	
 	<br>
 	<table  style="width: 78%; margin-left: 184px; background-color: #fff; " class="table">
@@ -410,14 +436,8 @@ a:hover:not (.active ) {
 					<font color="#00376c">Complexity of Inheritance</font>
 				</h1>
 				<br> 
-	
 			</div>
-
-	
 	<br>
-
-
-
 		<tbody>
 			<tr>
 				<th>Line No</th>

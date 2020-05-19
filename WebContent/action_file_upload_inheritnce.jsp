@@ -370,7 +370,7 @@ th {
 			<col style="width: 6%;">
 			<col style="width: 10%;">
 		</colgroup>
-<h1 style="text-align: center; background-color: #fff;">complexity of a program due to Inheritance</h1>
+<h1 style="text-align: center; color: white;"">complexity of a program due to Inheritance</h1>
 		<tbody>
 			<tr>
 				<th>Line No</th>

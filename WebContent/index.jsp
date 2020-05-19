@@ -111,7 +111,7 @@ background-color
 			<input id="myInput" type="file" name="file" webkitdirectory directory
 				multiple="multiple" size="50" /> <br /> <br />
 			<div style="margin-left: 69px;">
-			  		<div class="form-group" style="font-size: 24px; font-weight: normal; margin-left: -70px; width: 1351px;">
+			  		<div class="form-group" style="font-size: 24px; font-weight: normal; margin-left: -70px; width: 1012px;">
 				<label for="complexity" style="color: white;">Complexity Type:</label> 
 				<select class="custom-select" name ="type">
 

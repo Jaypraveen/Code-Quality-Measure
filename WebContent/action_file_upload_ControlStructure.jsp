@@ -135,8 +135,8 @@ a:hover:not (.active ) {
 		upload.setSizeMax(maxFileSize);
 		try {
 			List fileItems = upload.parseRequest(request);
-			Iterator i = fileItems.iterator();
-			out.println("<h1>All Files Complexity </h1>");
+			Iterator i = fileItems.iterator();			
+			out.println("<h1>Uploaded Files</h1>");
 			//out.println("<hr>");
 			while (i.hasNext()) {
 		FileItem fi = (FileItem) i.next();
@@ -477,21 +477,35 @@ a:hover:not (.active ) {
 					<caption style="caption-side: top; text-align:center; font-size:x-large;">Weights related to the Inheritance factor</caption>
 					<thead class="table-dark">
 						<tr>
-							<th scope="col" style="text-align:center">Program Component</th>
+							<th scope="col" style="text-align:center">Control Structure Type</th>
 							<th scope="col" style="text-align:center">Weight</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr class="table-secondary">
-							<td class="d-flex justify-content-center">Direct Inheritance Weight</td>
+							<td class="d-flex justify-content-center">if or else-if condition</td>
 							<td><input class="form-control" type="number"
-								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="1"></td>
+								name="inputPrimitiveReturnWeight" id="inputPrimitiveReturnWeight" value="2"></td>
 						</tr>
+						
 						<tr class="table-secondary">
-							<td class="d-flex justify-content-center">Indirect Inheritance Weight</td>
+							<td class="d-flex justify-content-center"> for, while, or do-while loop</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="3"></td>
+						</tr>
+						
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center"> switch statement in a switch-case</td>
 							<td><input class="form-control" type="number"
 								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="2"></td>
 						</tr>
+						
+						<tr class="table-secondary">
+							<td class="d-flex justify-content-center">  case statement in a switch-case</td>
+							<td><input class="form-control" type="number"
+								name="inputCompositeReturnWeight" id="inputCompositeReturnWeight" value="1"></td>
+						</tr>
+						
 					</tbody>
 				</table>
 				<div class="col text-right">
@@ -500,6 +514,7 @@ a:hover:not (.active ) {
 				</div>
 			</form>
 
+<br><br>
 	
 			<div align="center">
 		

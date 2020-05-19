@@ -76,33 +76,17 @@ li a:hover:not (.active ) {
 		</div>
 	</section>
 	<div>
-	<button>
-<a href="Action_file_Size.jsp" type="button">Size</a>
-</button>
-	<button>
-<a href="Action_file_Variable.jsp" type="button">Variable</a>
-</button>
-	<button>
-<a href="Action_file_Method.jsp" type="button">Method</a>
-</button>
-	<button>
-<a href="action_file_Inheritance.jsp" type="button">Inheritance</a>
-</button>
+	
 <button>
-<a href="action_file_ControlStructures.jsp" type="button">Control Structures</a>
-</button>
-<button>
-<a href="action_file_Coupeling.jsp" type="button">Coupeling</a>
-</button>
-<button>
-<a href="action_file_allfactors.jsp" type="button">All Factors</a>
+<a href="index.jsp" type="button">Home</a>
 </button>
 </div>
 	
-	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Inheritance</h1>
+	<br>
+	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Inheritance</h1><br>
 	<div style="margin-left: 369px;">
 		<h1 style="color: white;">Select Folder:</h1>
-		<br />
+	
 		</hr>
 		<form style="color: white;" action="action_file_upload_inheritnce.jsp" method="post" enctype="multipart/form-data">
 			<input id="input-file"  type="file" name="file" webkitdirectory directory

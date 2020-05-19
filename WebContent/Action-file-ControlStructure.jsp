@@ -75,14 +75,22 @@ li a:hover:not (.active ) {
 
 		</div>
 	</section>
-	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Control Structure</h1>
+	
+	<div>
+	<button>
+	<a href="index.jsp" type="button">Home</a>
+	</button>
+	</div>
+	
+	<br>
+	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Control Structure</h1><br>
 	<div style="margin-left: 369px;">
 		<h1>Select Folder:</h1>
-		<br />
+		
 		</hr>
 		<form action="action_file_upload_ControlStructure.jsp" method="post"
 			enctype="multipart/form-data">
-			<input id="myInput" type="file" name="file" webkitdirectory directory
+			<input id="input-file" type="file" name="file" webkitdirectory directory
 				multiple="multiple" size="50" /> <br /> <br />
 			<div style="margin-left: 69px;">
 				<div class="form-group"

@@ -107,6 +107,7 @@ background-color
 		</hr>
 		<form style="color: white;" action="AccessFileServlet" method="post"
 			enctype="multipart/form-data">
+			
 			<input id="myInput" type="file" name="file" webkitdirectory directory
 				multiple="multiple" size="50" /> <br /> <br />
 			<div style="margin-left: 69px;">

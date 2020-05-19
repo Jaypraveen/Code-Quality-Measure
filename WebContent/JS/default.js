@@ -78,12 +78,12 @@ function selectTopicFunction(){
 
 
 
-document.getElementById('myInput')
+document.getElementById('input-file')
 .addEventListener('change', getFile)
 
 function getFile(event) {
 	const input = event.target
-if ('files' in input && input.files.length > 0) {
+if ('file' in input && input.files.length > 0) {
 	  placeFileContent(
     document.getElementById('code'),
     input.files[0])

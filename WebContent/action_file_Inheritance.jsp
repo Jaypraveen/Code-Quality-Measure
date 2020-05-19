@@ -104,10 +104,9 @@ li a:hover:not (.active ) {
 		<h1 style="color: white;">Select Folder:</h1>
 		<br />
 		</hr>
-		<form style="color: white;" action="action_file_upload_inheritnce.jsp" method="post"
-			enctype="multipart/form-data">
-			<input id="myInput" type="file" name="file" webkitdirectory directory
-				multiple="multiple" size="50" /> <br /> <br />
+		<form style="color: white;" action="action_file_upload_inheritnce.jsp" method="post" enctype="multipart/form-data">
+			<input id="input-file"  type="file" name="file" webkitdirectory directory
+				multiple="multiple" size="50" /><br /> <br />
 			<div style="margin-left: 69px;">
 				<div class="form-group"
 					style="font-size: 25px; margin-left: -70px; font-weight: normal; width: 81%;">

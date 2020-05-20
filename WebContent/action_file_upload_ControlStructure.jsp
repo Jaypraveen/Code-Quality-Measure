@@ -111,7 +111,7 @@ a:hover:not (.active ) {
 		
 
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 	<%
 		String currentClassName = "";
 	File file = null;

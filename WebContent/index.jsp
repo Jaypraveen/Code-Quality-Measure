@@ -138,7 +138,7 @@ background-color
 	
 	<!--Footer-->
 	<div class="footer-container">
-		<!--Footer image-->
+		<!--Footer image--->
 		<img class="footer-image" src="Images/footer-image-crop.png" alt="">
 
 	</div>

@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@page import="com.Servlet.servlet"%>
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -15,7 +15,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 <link rel="stylesheet" type="text/css" href="Plugins/codemirror/lib/codemirror.css">
-<title>Code-Quality-Measure</title>
+<title>File Uploader</title>
 </head>
 <style>
 ul {
@@ -27,11 +27,9 @@ ul {
 	font-family: century gothic;
 	font-size: 25px;
 }
-
 li {
 	float: left;
 }
-
 li a {
 	display: block;
 	color: white;
@@ -39,7 +37,6 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-
 li
  
 a
@@ -56,8 +53,6 @@ background-color
  
 #ffd700
 ;
-
-
 }
 .active {
 	background-color: #ffd700;
@@ -76,25 +71,37 @@ background-color
 
 		</div>
 	</section>
-	
+	<div>
+		<button>
+			<a href="Action_file_Size.jsp" type="button">Size</a>
+		</button>
+		<button>
+			<a href="Action_file_Variable.jsp" type="button">Variable</a>
+		</button>
+		<button>
+			<a href="Action_file_Method.jsp" type="button">Method</a>
+		</button>
+		<button>
+			<a href="action_file_Inheritance.jsp" type="button">Inheritance</a>
+		</button>
+		<button>
+			<a href="Action-file-ControlStructure.jsp" type="button">Control Structures</a>
+		</button>
+		<button>
+			<a href="action_file_Coupeling.jsp" type="button">Coupeling</a>
+		</button>
+		<button>
+			<a href="action_file_allfactors.jsp" type="button">All Factors</a>
+		</button>
+	</div>
 
-
-<div>
 	<h1 style="color: #FFFAFA; font-size: 64px; text-align: center;">Code
 		Complexity</h1>
-		<br>
-	<div style="margin-left: 529px; margin-top: 26px;">
-		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
-	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
-	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
-	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
-	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
-   </div><br><br>
 	<div style="margin-left: 369px;">
 		<h1 style="color: white;">Select Folder:</h1>
-		
+		<br />
 		</hr>
-		<form style="color: white;" action="servlet" method="post"
+		<form style="color: white;" action="AccessFileServlet" method="post"
 			enctype="multipart/form-data">
 			
 			<input id="myInput" type="file" name="file" webkitdirectory directory
@@ -104,12 +111,12 @@ background-color
 				<label for="complexity" style="color: white;">Complexity Type:</label> 
 				<select class="custom-select" name ="type">
 
-					<option value="1" name="option">By Size</option>
-					<option value="2" name="option">By Variables</option>
-					<option value="3" name="option">By Methods</option>
-					<option value="4" name="option">By Control Structure</option>
-					<option value="5" name="option">By Inheritance</option>
-					<option value="6" name="option">By Coupling</option>
+					<option value="1">By Size</option>
+					<option value="2">By Variables</option>
+					<option value="3">By Methods</option>
+					<option value="4">By Control Structure</option>
+					<option value="5">By Inheritance</option>
+					<option value="6">By Coupling</option>
 				</select>
 			</div>
 				<div class="form-group"
@@ -135,10 +142,9 @@ background-color
 		</form>
 
 	</div>
-	
 	<!--Footer-->
 	<div class="footer-container">
-		<!--Footer image--->
+		<!--Footer image-->
 		<img class="footer-image" src="Images/footer-image-crop.png" alt="">
 
 	</div>
@@ -152,7 +158,15 @@ background-color
 	<script type="text/javascript" src="JS/behave.js"></script>
 	<script type="text/javascript" src="JS/script.js"></script>
 	
-
+	<script>
+		var folder = document.getElementById("myInput");
+		folder.onchange = function() {
+			var files = folder.files, len = files.length, i;
+			for (i = 0; i < len; i += 1) {
+				console.log(files[i]);
+			}
+		}
+	</script>
 	
 </body>
 </html>

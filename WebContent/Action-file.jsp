@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>File Uploader</title>
+<title>Code-Quality-Measure</title>
 </head>
 <body>
 	<h1>

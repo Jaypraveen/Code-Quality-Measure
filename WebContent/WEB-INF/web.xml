@@ -38,11 +38,11 @@
     <load-on-startup>3</load-on-startup>
   </servlet>
   <servlet>
-   <servlet-name>AccessFileServlet</servlet-name>
-   <servlet-class>com.servlet.AccessFileServlet</servlet-class>
+   <servlet-name>servlet</servlet-name>
+   <servlet-class>com.Servlet.servlet</servlet-class>
   </servlet>
   <servlet-mapping> 
-  <servlet-name>AccessFileServlet</servlet-name>
-  <url-pattern>/AccessFileServlet/*</url-pattern>
+  <servlet-name>servlet</servlet-name>
+  <url-pattern>/servlet/*</url-pattern>
   </servlet-mapping>
 </web-app>

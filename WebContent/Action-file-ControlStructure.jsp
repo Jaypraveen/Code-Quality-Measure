@@ -29,7 +29,7 @@
 <link rel="stylesheet" type="text/css" href="CSS/main.css">
 <link rel="stylesheet" type="text/css"
 	href="Plugins/codemirror/lib/codemirror.css">
-<title>File Uploader</title>
+<title>Code-Quality-Measure</title>
 </head>
 <style>
 ul {
@@ -76,14 +76,16 @@ li a:hover:not (.active ) {
 		</div>
 	</section>
 	
-	<div>
-	<button>
-	<a href="index.jsp" type="button">Home</a>
-	</button>
-	</div>
 	
 	<br>
 	<h1 style="color:#FFFAFA; font-size:64px; text-align: center;">Control Structure</h1><br>
+	<div style="margin-left: 529px; margin-top: 26px;">
+		<a class="btn btn-primary" href="Action_file_Size.jsp" role="button">Size,Variable,Method</a>
+	    <a class="btn btn-primary" href="Action-file-ControlStructure.jsp" role="button">Control Structures</a>
+	    <a class="btn btn-primary" href="action_file_Inheritance.jsp" role="button">Inheritance</a>
+	    <a class="btn btn-primary" href="action_file_Coupeling.jsp" role="button">Coupeling</a>
+	    <a class="btn btn-primary" href="action_file_allfactors.jsp" role="button">All Factors</a>
+   </div><br><br>
 	<div style="margin-left: 369px;">
 		<h1 style="color: white;">Select Folder:</h1>
 		
